@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    ここはトップページです。
-    <a href="{{url_for('square_input')}}">面積計算</a>
+    <form action="{{url_for('square_result')}}" method="get">
+        高さ: <input type="text" name="hei" ><br>
+        底辺: <input type="text" name="bot"><br>
+        <input type="submit" value="計算">
+    </form>
 </body>
 </html>
